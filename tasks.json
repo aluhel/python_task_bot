@@ -1,0 +1,104 @@
+[
+    {
+        "id": "1",
+        "level": "easy",
+        "text": "Напиши функцию add(a, b), которая возвращает сумму двух чисел.",
+        "function": "add",
+        "tests": [
+            {"input": [2, 3], "expected": 5},
+            {"input": [-1, 1], "expected": 0},
+            {"input": [0, 0], "expected": 0}
+        ]
+    },
+    {
+        "id": "2",
+        "level": "easy",
+        "text": "Напиши функцию max_of(numbers), которая принимает непустой список чисел и возвращает наибольшее. Встроенную max не используй.",
+        "function": "max_of",
+        "tests": [
+            {"input": [[1, 5, 3]], "expected": 5},
+            {"input": [[-7, -2, -9]], "expected": -2},
+            {"input": [[4]], "expected": 4}
+        ]
+    },
+    {
+        "id": "3",
+        "level": "easy",
+        "text": "Напиши функцию count_vowels(text), которая возвращает количество латинских гласных (a, e, i, o, u) в строке без учёта регистра.",
+        "function": "count_vowels",
+        "tests": [
+            {"input": ["hello"], "expected": 2},
+            {"input": ["HELLO"], "expected": 2},
+            {"input": [""], "expected": 0}
+        ]
+    },
+    {
+        "id": "4",
+        "level": "middle",
+        "text": "Напиши функцию is_palindrome(text), которая возвращает True, если строка читается одинаково в обе стороны без учёта регистра и пробелов, иначе False.",
+        "function": "is_palindrome",
+        "tests": [
+            {"input": ["abba"], "expected": true},
+            {"input": ["А роза упала на лапу Азора"], "expected": true},
+            {"input": ["abc"], "expected": false},
+            {"input": [""], "expected": true}
+        ]
+    },
+    {
+        "id": "5",
+        "level": "middle",
+        "text": "Напиши функцию count_words(text), которая возвращает словарь {слово: сколько раз встречается}. Слова разделены пробелами. Для пустой строки — пустой словарь.",
+        "function": "count_words",
+        "tests": [
+            {"input": ["a b a"], "expected": {"a": 2, "b": 1}},
+            {"input": ["кот"], "expected": {"кот": 1}},
+            {"input": [""], "expected": {}}
+        ]
+    },
+    {
+        "id": "6",
+        "level": "middle",
+        "text": "Напиши функцию second_max(numbers), которая возвращает второе по величине различное число из списка. Если такого нет — None.",
+        "function": "second_max",
+        "tests": [
+            {"input": [[1, 5, 3]], "expected": 3},
+            {"input": [[5, 5, 1]], "expected": 1},
+            {"input": [[7, 7]], "expected": null}
+        ]
+    },
+    {
+        "id": "7",
+        "level": "hard",
+        "text": "Напиши функцию two_sum(numbers, target), которая возвращает список из двух индексов [i, j], i < j, таких что numbers[i] + numbers[j] == target. Гарантируется, что такая пара ровно одна. Решение за O(n).",
+        "function": "two_sum",
+        "tests": [
+            {"input": [[2, 7, 11, 15], 9], "expected": [0, 1]},
+            {"input": [[3, 2, 4], 6], "expected": [1, 2]},
+            {"input": [[3, 3], 6], "expected": [0, 1]}
+        ]
+    },
+    {
+        "id": "8",
+        "level": "hard",
+        "text": "Напиши функцию is_balanced(text), которая возвращает True, если скобки (), [], {} в строке расставлены правильно, иначе False. Других символов в строке нет.",
+        "function": "is_balanced",
+        "tests": [
+            {"input": ["([]{})"], "expected": true},
+            {"input": ["(]"], "expected": false},
+            {"input": ["(("], "expected": false},
+            {"input": [""], "expected": true}
+        ]
+    },
+    {
+        "id": "9",
+        "level": "hard",
+        "text": "Напиши функцию longest_unique(text), которая возвращает длину самой длинной подстроки без повторяющихся символов. Решение за O(n).",
+        "function": "longest_unique",
+        "tests": [
+            {"input": ["abcabcbb"], "expected": 3},
+            {"input": ["bbbb"], "expected": 1},
+            {"input": ["pwwkew"], "expected": 3},
+            {"input": [""], "expected": 0}
+        ]
+    }
+]
